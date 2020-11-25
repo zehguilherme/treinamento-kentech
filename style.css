@@ -1,0 +1,56 @@
+/* class: marcar itens repetíveis
+   id: marcar itens específicos
+ */
+
+body {
+}
+
+#banner {
+  width: 100%;
+}
+
+.principal {
+  background: #cccccc;
+  padding: 30px;
+}
+
+.titulo-principal {
+  padding-left: 20px;
+}
+
+.titulo-centralizado {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+#missao {
+  font-size: 20px;
+}
+
+p em strong {
+  color: #ff0000;
+}
+
+.beneficios {
+  background: #ffffff;
+  padding: 20px;
+}
+
+.beneficios ul {
+  display: inline-block; /*Ocupa apenas o tamanho do seu conteúdo,
+                          mas permite a alteração da largura e espaçamentos*/
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+.beneficios ul .itens {
+  font-style: italic;
+}
+
+.beneficios .imagem-beneficios {
+  width: 50%;
+}
