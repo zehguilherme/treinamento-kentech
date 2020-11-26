@@ -30,7 +30,7 @@
 - `relative`
   - **Exemplo:**
     - Depois de tal elemento carregado, deseja-se mudar o ponto inicial dele a partir do ponto inicial
-    - 'Olha' partir do ponto inicial, mas tem uma nova posição que é relativa a aquela posição inicial
+    - 'Olha' a partir do ponto inicial, mas tem uma nova posição que é relativa a aquela posição inicial
     - Elemento está deslocado, mas o ponto inicial continua onde deveria estar
 
 - `absolute`
