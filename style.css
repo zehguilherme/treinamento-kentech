@@ -5,23 +5,24 @@ body {
 header {
   background: #bbbbbb;
   padding: 20px 0;
+  width: 100vw;
 }
 
 header .caixa {
-  position: relative;
-  width: 940px;
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 150px;
 }
 
 header .caixa nav {
-  position: absolute;
-  top: 110px;
-  right: 0;
+  width: 400px;
 }
 
-header .caixa nav ul li {
-  display: inline;
-  margin: 0 0 0 15px;
+header .caixa nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 header .caixa nav ul li a {
@@ -37,12 +38,10 @@ header .caixa nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* HOME */
 img.banner {
-  width: 100%;
+  width: 100vw;
 }
 
-/* HOME */
 main .titulo-principal {
   text-align: center;
   font-size: 2em;
@@ -247,6 +246,8 @@ footer .copyright {
   font-size: 13px;
   margin: 20px 0 0;
 }
+
+/******************************************* Mobile ***********************************/
 
 @media screen and (max-width: 480px) {
   header .caixa,
