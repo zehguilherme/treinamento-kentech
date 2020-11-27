@@ -8,6 +8,12 @@
 ### `<legend>`
 - Título de um `<fieldset>`
 - Título de um grupo de campos no formulário
+
+### `<div>`
+- Divisão apenas visual
+
+### `<section>`
+- Divisão em que há um conteúdo complexo (semânticamente faz um mesmo sentido como um todo)
 </details>
 
 <details>
@@ -22,6 +28,11 @@
 
 <details>
   <summary>CSS</summary>
+
+### Cálculos
+  - `calc(operações desejadas)`
+
+---
 
 ### `position`
 - `static`
@@ -50,7 +61,70 @@
     - As propriedades de `width` e de `height` incluem o tamanho padding size e a propriedade `border`, mas não incluem a propriedade `margin`.
     - O espaçamento lateral passa a ficar dentro do percentual
 
+### `clear`
+  - Limpa os elementos que estavam sendo afetados pelo `float`
+  - Elementos que não deveriam ser afetados (abaixo dele)
+
+### `background`
+  - `linear-gradient(graus - inclinação, cor, cor, cor, etc)`: transição de uma cor para outra
+  - `radial-gradient(cor, cor, cor, etc)`: transição de uma cor para outra (radial - redondo)
+
+---
+
 ### Pseudo-classes
-  - `active`: quando um elemento está sendo ativado pelo usuário
+  - `:active`: quando um elemento está sendo ativado pelo usuário
+  - `:nth-child(numero do elemento)`: selecionar um elemento específico de um lista, por exemplo
+
+---
+
+### Pseudo-elementos
+- **Elementos criados no CSS que não existem no HTML**
+
+  - `:first-letter`: primeira letra de um texto
+  - `:first-line`: primeira linha
+  - `:before`: Cria um espaço antes do elemento onde o CSS pode ser usado
+  - `:after`: Cria um espaço depois do elemento onde o CSS pode ser usado
+
+---
+
+### Seletores avançados
+- `>`
+  - **Selecionar filhos diretos do elemento pai**
+  - **Exemplo:**
+    ```
+    main > p {
+      background: red;
+    }
+    ```
+
+- `+`
+  - **Selecionar 1º irmão de determinado elemento**
+  - Todo parágrafo que vem após uma imagem
+  - **Exemplo:**
+    ```
+    img + p {
+      background: blue;
+    }
+    ```
+
+- `~`
+  - **Selecionar todos os irmãos de determinado elemento**
+  - Todos os parágrafos que vem após uma imagem
+  - **Exemplo:**
+    ```
+    img ~ p {
+      background: blue;
+    }
+    ```
+
+- `:not()`
+  - **Selecionar todos os elementos, exceto algum**
+  - Todos os parágrafos que não fazem parte da missão, não possuem o `id` `missao` => `#missao`
+  - **Exemplo:**
+    ```
+    principal p:not(#missao) {
+      background: orange;
+    }
+    ```
 
 </details>
