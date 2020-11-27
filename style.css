@@ -1,3 +1,7 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
 header {
   background: #bbbbbb;
   padding: 20px 0;
@@ -33,9 +37,101 @@ header .caixa nav ul li a:hover {
   text-decoration: underline;
 }
 
-main {
+/* HOME */
+img.banner {
+  width: 100%;
+}
+
+/* HOME */
+main .titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+main .principal {
+  padding: 3em 0;
+  background: #fefefe;
   width: 940px;
   margin: 0 auto;
+}
+
+main .principal p {
+  margin: 0 0 1em;
+}
+
+main .principal p strong {
+  font-weight: bold;
+}
+
+main .principal p em {
+  font-style: italic;
+}
+
+main .principal .utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+main .mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+main .mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+main .mapa .mapa-conteudo {
+  width: 940px;
+  margin: 0 auto;
+}
+
+main .beneficios {
+  padding: 3em 0;
+  background: #888888;
+}
+
+main .beneficios .conteudo-beneficios {
+  width: 640px;
+  margin: 0 auto;
+}
+
+main .beneficios .lista-beneficios {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+main .beneficios .lista-beneficios .itens {
+  line-height: 1.5;
+}
+
+main .beneficios .lista-beneficios .itens:first-child {
+  font-weight: bold;
+}
+
+main .beneficios .lista-beneficios .itens:before {
+  content: '★ ';
+}
+
+main .beneficios .imagem-beneficios {
+  width: 60%;
+  opacity: 1;
+  transition: 400ms;
+  box-shadow: 10px 10px 10px #000000;
+}
+
+main .beneficios .imagem-beneficios:hover {
+  opacity: 0.3;
+}
+
+main .beneficios .video {
+  width: 560px;
+  margin: 2em auto;
 }
 
 main form {
@@ -150,4 +246,27 @@ footer .copyright {
   color: #ffffff;
   font-size: 13px;
   margin: 20px 0 0;
+}
+
+@media screen and (max-width: 480px) {
+  header .caixa,
+  main .principal,
+  main .beneficios .conteudo-beneficios,
+  main .mapa .mapa-conteudo,
+  main .beneficios .video {
+    width: auto;
+  }
+
+  header .caixa h1 {
+    text-align: center;
+  }
+
+  header .caixa nav {
+    position: static;
+  }
+
+  main .beneficios .conteudo-beneficios .lista-beneficios,
+  main .beneficios .conteudo-beneficios .imagem-beneficios {
+    width: 100%;
+  }
 }
