@@ -1,3 +1,9 @@
+<div align="center">
+  <img src="https://cursos.alura.com.br/assets/images/logos/logo-alura.svg" alt="Logo da Alura">
+</div>
+
+<br>
+
 <details>
   <summary>HTML</summary>
 
