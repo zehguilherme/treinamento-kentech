@@ -134,3 +134,274 @@
     ```
 
 </details>
+
+<details>
+  <summary>HTTP</summary>
+
+  **Hypertext Tranfer Protocol**
+
+  - Carrega apenas texto puro
+  - É independente de plataforma de desenvolvimento
+  - Estabelece regras de comunicação entre o cliente e servidor
+
+## HTTPS
+
+- HTTP + SSL/TSL (**Hypertext Transfer Protocol + Secure Sockets Layer/Transport Layer Security**)
+
+- Carrega dados criptografados
+- Usa ambos os métodos de criptografia, **assimétrica** e **simétrica**
+  - Inicia com a criptografia assimétrica para depois mudar para a criptografia simétrica. Essa chave simétrica será gerada no início da comunicação e será reaproveitada nas requisições seguintes
+
+- **Certificado digital** (identidade)
+  - Guarda a chave pública
+  - Possue uma data validade e serve para provar a identidade entre o cliente e o servidor
+
+- Chaves
+  - Estão *ligadas* matematicamente
+  - O que foi cifrado pela chave pública só pode ser decifrado pela chave privada
+
+  - **Pública**
+    - Cliente
+    - Utilizada para criptografar os dados
+
+  - **Privada**
+    - Servidor
+    - Usada para descriptografar os dados que foram criptografados com a chave pública
+
+- Criptografia
+  - **Assimétrica**
+    - 2 chaves diferentes envolvidas
+    - Problema: é lenta
+
+  - **Simétrica**
+    - Usa a mesma chave para cifrar e decifrar os dados
+    - Muito mais rápida
+    - Não tão segura
+      - Como existe apenas uma chave, ela ficará espalhada pelos clientes (navegadores) e qualquer um, que tem a posse dessa chave, pode decifrar a comunicação
+
+- Autoridades certificadoras
+  - Órgãos
+  - Garantem que podemos confiar naquele determinado certificado (identidade)
+  - Essa assinatura é feita através de uma **assinatura digital**
+  - A autoridade certificadora **assina digitalmente** o certificado
+
+## Endereço
+
+![URL](./http/img/url.png)
+
+- Domínio
+  - Nome do site na web
+  - Serve para facilitar a navegação do usuário, que acaba não precisando lembrar o IP de cada site
+
+  - **Raiz**
+    - Parte final do endereço
+
+    ![Raiz](./http/img/endereco_raiz.png)
+
+## DNS
+
+- **Domain Name Server**
+- Realiza a tradução do nome de um domínio para o endereço de IP
+- Existem vários servidores DNS no mundo
+
+## Portas
+
+`http://www.alura.com.br:80`
+
+`https://www.alura.com.br:443`
+
+- Porta padrão: 80 (HTTP)
+- Porta padrão: 443 (HTTPS)
+
+## Recurso
+
+`https://www.alura.com.br:443/course/introducao-html-css`
+
+- Algo concreto que se quer acessar
+
+## URL X URI X URN
+
+- Uma URL é uma URI mas nem todas as URI's são URL's
+- Existem URI's que identificam um recurso sem definir o endereço, nem o protocolo
+
+![URI](./http/img/uri_url.png)
+
+### URL (Uniform Resource Locator)
+
+- Representa uma identificação de um recurso (URI) através do endereço, mas nem todas as identificações são URL's
+
+### URN (Uniform Resource Name)
+
+- Também são URI's
+- `urn:cursos:alura:course:introducao-html-css`
+- Outra identificação do curso Introdução ao HTML e CSS da Alura, mas essa identificação não é um endereço
+
+## Requisição (Request) e Resposta (Response)
+
+- Uma **requisição** precisa ter **todas as informações** para o servidor gerar a resposta
+- Cliente (requisição) -> espera -> servidor (resposta)
+
+- HTTP não guarda um estado (stateless)
+  - Não mantem informações entre as requisições
+  - Quando é feita uma requisição, esta não sabe o que foi feito em uma requisição anterior
+  - Cada requisição é única
+
+### Sessão
+
+- Manter dados entre as diversas requisições
+- Um tempo que o cliente permanece ativo no sistema
+- Principal método utilizado é o **cookie**
+
+![Sessão](./http/img/sessao.png)
+
+#### Cookie
+
+- Pequeno arquivo de texto, normalmente criado pela aplicação web, para guardar algumas informações sobre o usuário no navegador
+- Essas informações dependem do tipo de aplicação
+  - Código da sessão (identificação do usuário), que determinado que determinado usuário está logado (`session-id` ou `PHPSESSID` ou `ASP.NET_SessionId` ou `JSESSIONID`, etc)
+  - Alguma preferência do usuário
+  - Informações sobre as compras numa loja virtual
+  - etc
+
+- Fica associado a um domínio
+
+### Status Code
+
+- 200 - OK
+- 300 - Moved Permanently (É feita uma nova requisição)
+- 404 - Not Found (URL inválida ou recurso inexistente)
+- 500 - Internal Server Error (Erro interno da aplicação)
+
+---
+
+- 2XX - Successful responses (a ação solicitada pelo cliente foi recebida, compreendida, aceita e processada com êxito)
+- 3XX - Redirection messages (cliente precisa fazer algo a mais, pois algo mudou ou um recurso não existe mais)
+- 4XX - Client error responses (navegador enviou dados errados)
+- 5XX - Server error responses (Erro no servidor)
+
+## Parâmetros da requisição
+
+- Usados para definir detalhes da pesquisa ou enviar dados de um formulário
+
+## Métodos HTTP
+
+- GET
+  - Usado na busca de informações (listagem, por exemplo)
+  - Receber dados
+  - **- Envia parâmetros pela URL**
+    - Usa-se `?` e concatena-se com `&`
+
+- POST
+  - Submeter dados
+  - Criação de uma nova informação
+  - Login - preenchimento de formulário
+  - O envio dos parâmetros é feito no **corpo da requisição**
+    - **Não são enviados pela URL**
+
+- PUT
+  - Atualizar um recurso
+
+- DELETE
+  - Deletar um recurso
+
+## Web Service
+
+- Usa o HTTP
+- Disponibiliza uma funcionalidade na web
+  - Variam muito e dependem muito da empresa e do negócio dela
+- A grande diferença de um Web Service é que os dados **não** vem no formato HTML, e sim em algum formato independente da visualização, como XML ou JSON
+
+## Serviços REST (Representation State Transfer)
+
+- Padrão arquitetura para comunicações entre aplicações
+- Aproveita da estrutura que o HTTP proporciona
+- Recursos são definidos via URI
+- Operações com os métodos HTTP (GET, POST, PUT, DELETE)
+- Cabeçalhos (Accept/Content-Type) para especificar a representação (JSON, XML, ...)
+
+![Especificações do REST](./http/img/rest.png)
+
+### URI + Método
+- `http://alurafood.com/api/restaurante` - **GET** -> Pede todos os restaurantes
+
+- `http://alurafood.com/api/restaurante/1/cardapio` - **GET** -> Pede o cardápio do restaurante 1
+
+- `http://alurafood.com/api/restaurante` - **POST** -> Adiciona um novo restaurante
+
+- `http://alurafood.com/api/restaurante/1` - **PUT/PATCH** -> Atualiza o restaurante 1
+
+- `http://alurafood.com/api/restaurante/1` - **DELETE** -> Remove o restaurante 1
+
+### Cabeçalhos
+
+Em alguns cabeçalhos do **HTTP** devemos especificar algum formato. Os formatos são chamados na documentação de **MIME types**. E na definição do cabeçalho usamos a seguinte estrutura: `tipo/subtipo`.
+
+Tipos
+- `text, image, application, audio e video`
+
+Subtipos
+- `text -> text/plain, text/html, text/css, text/javascript`
+- `image -> image/gif, image/png, image/jpeg`
+- `audio -> audio/midi, audio/mpeg, audio/webm, audio/ogg, audio/wav`
+- `video -> video/mp4`
+- `application -> application/xml,  application/pdf`
+
+## HTTP/2
+
+- Atua sobre o que já se conhece do HTTP
+
+- Possui diversas tecnologias de compactação de sua requisição. Isto acaba sendo muito útil para clientes móveis, visto que a maioria das redes mobile ainda não são de grande qualidade.
+
+- Corpo da **resposta** de uma requisição é comprimido usando o algoritmo **GZIP**
+- Requisições e respostas
+  - **TLS** (criptografia)
+  - Cabeçalhos
+    - **binários** (não mais em texto puro)
+    - **HPACK** (compressão)
+
+### Headers Stateful
+
+No caso dos cabeçalhos, o estado deles é guardado
+
+- Requisição
+  - Não é necessário enviar novamente/repetir o(s) mesmo(s) cabeçalhos que já foi(ram) enviados em uma requisição passada
+  - São enviados apenas os cabeçalhos que são diferentes a cada requisição, o que acaba economizando dados
+
+### Server Push
+
+- O servidor envia dados para o cliente sem que o cliente tenha solicitado, tornando o tráfego de dados muito mais otimizado
+
+- Ele pode empurrar para o clientes certos recursos antes mesmo de serem solicitados, pois ele consegue analisar o HTML e ver o que mais é preciso para carregar a página fazendo com que não seja necessário gastar tempo pedindo todos os outros recursos
+
+#### Antes
+
+- Requisições seriais
+- Fazíamos uma requisição e esperávamos receber a resposta, fazíamos outra requisição e esperávamos receber e por aí vai
+
+#### Depois
+
+- No HTTP2, quando o cliente realiza uma requisição para `index.html`, o servidor devolve a página, mas ele já pode passar para o browser as informações necessárias (imagens, CSS, JavaScript, etc) para que essa página possa ser, de fato, exibida. Ou seja, ele consegue dar um passo além
+
+![Exemplo de server push](./http/img/server-push.png)
+
+- Mas quando o browser for interpretar essa página HTML, vai ter que passar pelo conteúdo que especifica o arquivo CSS? Sim, mas quando ele passar pelo `estilo.css`, vai verificar que já recebeu. Ou seja, ele percebe que já recebeu essas informações
+
+### Multiplexação
+
+- Requisição e respostas paralelas
+
+- Não é necessário esperar terminar uma requisição para dar início a próxima, elas ocorrem em paralelo juntamente com as respostas
+
+#### Keep-Alive
+
+- Determina quanto tempo, por exemplo, a nossa conexão pode ficar ativa. Ou seja, não encerra a conexão **TCP** (“por baixo dos panos”, antes de cada **requisição** de fato ser feita, há uma conexão, comunicação entre **cliente** e **servidor**, TCP). Portanto, conseguimos realizar várias requisições com a mesma conexão TCP
+
+##### Keep-Alive No HTTP/2
+
+- Se temos uma conexão TCP aberta e realizamos uma requisição, poderíamos já dar prosseguimento às próximas requisições, isso em paralelo, sem de fato ficar esperando o resultado dela, de maneira assíncrona, e vamos recebendo essas respostas à medida em que o servidor for conseguindo processar
+
+- Então, essas requisições e respostas vão chegando a todo tempo. É totalmente paralelo. A mesma coisa acontece com o servidor, não precisamos esperar uma resposta para enviar outra. Se já está pronta para ser enviada, ele já envia diretamente
+
+![Keep-Alive no HTTP2](./http/img/keep-alive-http2.png)
+
+</details>
