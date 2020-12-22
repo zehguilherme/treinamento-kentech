@@ -555,3 +555,50 @@ No caso dos cabeçalhos, o estado deles é guardado
   ```
 
 </details>
+
+<details>
+  <summary>jQuery</summary>
+
+  - Compatibilidade entre todos os navegadores
+  - Produtividade
+    - Escrever menos código do que se fosse escrito em javascript puro
+
+  ## `.text()`
+  - [Documentação](https://api.jquery.com/text/)
+  - Tanto altera como pega o valor do texto de elementos
+  - Pega o conteúdo de texto de tags HTML que tem texto dentro, como as `<h1>`, `<span>` e `<p>`
+
+  ## `.val()`
+  - [Documentação](https://api.jquery.com/val/)
+  - Tanto altera como pega o valor do texto de elementos
+  - Funciona em elementos de `<input>` que são campos aonde o usuário do site insere dados, como os campos de `<input>`(todos os tipos), `<textarea>` e `<select>`
+
+  ## `.on()`
+  - [Documentação](https://api.jquery.com/on/)
+
+  ## `.one()`
+  - [Documentação](https://api.jquery.com/one/)
+  - Executa determinado evento apenas 1 vez
+
+  ## `.focus()`
+  - Usado para detectar quando o usuário entra em um campo, não necessariamente digitando
+
+  ## `.attr()`
+  - Acessa os atributos de um elemento
+
+  ## `.addClass()`
+  - Adiciona uma classe a um elemento
+
+  ## `.removeClass()`
+  - Remove uma classe de um elemento
+
+  ## `.toggleClass()`
+  - Adiciona ou remove uma ou mais classes de cada elemento no conjunto de elementos correspondentes, dependendo da presença da classe ou do valor do argumento de estado
+  - Se determinado elemento estiver com a classe, ela é removida. Caso não esteja com ela, ela é adicionada
+
+  ## `.startsWith()`
+  - Comparar se a `string` de determinado elemento começa com a `string` de outro
+
+  ## `.find()`
+  - Busca na DOM (a partir de um elemento especificado) por outro elemento
+</details>
