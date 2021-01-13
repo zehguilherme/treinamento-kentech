@@ -602,3 +602,19 @@ No caso dos cabeçalhos, o estado deles é guardado
   ## `.find()`
   - Busca na DOM (a partir de um elemento especificado) por outro elemento
 </details>
+
+<details>
+  <summary>Asp.NET Core</summary>
+  
+  ## MVC (Model View Controller)
+  
+  ### Model
+  - Classes de negócio
+  - Elas modelam a aplicação
+  
+  ### View
+  - Classes e arquivos para tratar da parte que o usuário visualiza
+  
+  ### Controller
+  - A lógica de controle/atendimento das requisições
+<details/>
