@@ -617,4 +617,15 @@ No caso dos cabeçalhos, o estado deles é guardado
   
   ### Controller
   - A lógica de controle/atendimento das requisições
+  
+  ---
+  
+  ## Estágios de execução do framework
+  
+  - O Framework é que trata as respostas das requisições
+  
+  ### Execute Result
+  - Etapa que ocorre depois da execução da **action**
+  
+  
 <details/>
