@@ -670,3 +670,30 @@ No caso dos cabeçalhos, o estado deles é guardado
       - Somente aceita requisições deste endereço
 
 </details>
+
+<details>
+  <summary>Asp.NET Core</summary>
+  
+  ## MVC (Model View Controller)
+  
+  ### Model
+  - Classes de negócio
+  - Elas modelam a aplicação
+  
+  ### View
+  - Classes e arquivos para tratar da parte que o usuário visualiza
+  
+  ### Controller
+  - A lógica de controle/atendimento das requisições
+  
+  ---
+  
+  ## Estágios de execução do framework
+  
+  - O Framework é que trata as respostas das requisições
+  
+  ### Execute Result
+  - Etapa que ocorre depois da execução da **action**
+  
+  
+<details/>
