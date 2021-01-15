@@ -1,0 +1,15 @@
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.1\Repositorio\livros.csv
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.1\Views\Cadastro\formulario.cshtml
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.1\Alura.ListaLeitura.App.deps.json
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.1\Alura.ListaLeitura.App.runtimeconfig.json
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.1\Alura.ListaLeitura.App.runtimeconfig.dev.json
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.1\Alura.ListaLeitura.App.dll
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.1\Alura.ListaLeitura.App.pdb
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.1\Alura.ListaLeitura.App.AssemblyInfoInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.1\Alura.ListaLeitura.App.AssemblyInfo.cs
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.1\Alura.ListaLeitura.App.csproj.CoreCompileInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.1\Alura.ListaLeitura.App.dll
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.1\Alura.ListaLeitura.App.pdb
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.1\Alura.ListaLeitura.App.genruntimeconfig.cache
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\obj\Debug\netcoreapp2.1\Alura.ListaLeitura.App.csprojAssemblyReference.cache
+C:\jose-guilherme\kentech\treinamento-kentech\aspnet-core-webapp-mvc\Alura.ListaLeitura\Alura.ListaLeitura.App\bin\Debug\netcoreapp2.1\Views\Livros\lista.cshtml

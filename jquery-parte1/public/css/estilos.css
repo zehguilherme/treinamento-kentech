@@ -1,9 +1,43 @@
+body {
+  overflow: scroll;
+}
+
 .frase {
   font-size: 20px;
 }
 
+#spinner {
+  display: none;
+}
+
+#erro {
+  color: red;
+  display: none;
+}
+
 .icones {
   vertical-align: middle;
+}
+
+.select-usuarios,
+#usuarios {
+  display: inline-block;
+}
+
+.selectize-control {
+  width: 150px;
+}
+
+.selectize-input {
+  vertical-align: middle;
+}
+
+#botao-sync {
+  float: right;
+}
+
+#frase-id {
+  width: 40px;
 }
 
 .campo-digitacao {
@@ -22,4 +56,8 @@
 
 .borda-errada {
   border: 3px solid red;
+}
+
+.placar {
+  display: none;
 }

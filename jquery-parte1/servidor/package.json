@@ -5,14 +5,15 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server"
+    "start": "nodemon server"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "body-parser": "^1.15.2",
     "consign": "^0.1.2",
-    "express": "^4.14.0",
-    "nedb": "^1.1.2"
+    "express": "^4.17.1",
+    "nedb": "^1.1.2",
+    "nodemon": "^2.0.6"
   }
 }

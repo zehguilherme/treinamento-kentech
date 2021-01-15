@@ -6,8 +6,23 @@ $(() => {
   inicializaContadores()
   inicializaCronometro()
   inicializaMarcadores()
-  $('#botao-reiniciar').on('click', reiniciaJogo)
+  $('#botao-reiniciar').click(reiniciaJogo)
+  atualizaPlacarComOsDadosDoServidor()
+
+  $('#usuarios').selectize({
+    create: true,
+    sortField: 'text'
+  })
+
+  $('.tooltip').tooltipster({
+    trigger: 'custom'
+  })
 })
+
+function atualizarTempoInicial (tempo) {
+  tempoInicial = tempo
+  $('#tempo-digitacao').text(tempo)
+}
 
 function atualizaTamanhoDaFrase () {
   var frase = $('.frase').text()
@@ -30,9 +45,8 @@ function inicializaContadores () {
 }
 
 function inicializaCronometro () {
-  var tempoRestante = $('#tempo-digitacao').text()
-
   campo.one('focus', () => {
+    var tempoRestante = $('#tempo-digitacao').text()
     var cronometroID = setInterval(() => {
       $('#botao-reiniciar').attr('disabled', true)
 
@@ -57,9 +71,8 @@ function finalizaJogo () {
 }
 
 function inicializaMarcadores () {
-  var frase = $('.frase').text()
-
   campo.on('input', () => {
+    var frase = $('.frase').text()
     var conteudoDigitado = campo.val()
     var digitouCorreto = frase.startsWith(conteudoDigitado) //comparar se a frase começa com aquilo que é digitado pelo usuário
 
