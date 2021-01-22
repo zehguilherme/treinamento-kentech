@@ -1,0 +1,12 @@
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\bin\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.deps.json
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\bin\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.dll
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\bin\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.pdb
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.dll
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.pdb
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.csprojAssemblyReference.cache
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.AssemblyInfoInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.AssemblyInfo.cs
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.csproj.CoreCompileInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.csproj.CopyComplete
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.dll
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.DAL.Livros\obj\Debug\netcoreapp2.1\Alura.WebAPI.DAL.Livros.pdb

@@ -1,0 +1,9 @@
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Debug\netcoreapp2.1\Alura.WebAPI.Seguranca.deps.json
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Debug\netcoreapp2.1\Alura.WebAPI.Seguranca.dll
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Seguranca\bin\Debug\netcoreapp2.1\Alura.WebAPI.Seguranca.pdb
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Debug\netcoreapp2.1\Alura.WebAPI.Seguranca.csprojAssemblyReference.cache
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Debug\netcoreapp2.1\Alura.WebAPI.Seguranca.AssemblyInfoInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Debug\netcoreapp2.1\Alura.WebAPI.Seguranca.AssemblyInfo.cs
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Debug\netcoreapp2.1\Alura.WebAPI.Seguranca.csproj.CoreCompileInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Debug\netcoreapp2.1\Alura.WebAPI.Seguranca.dll
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Seguranca\obj\Debug\netcoreapp2.1\Alura.WebAPI.Seguranca.pdb

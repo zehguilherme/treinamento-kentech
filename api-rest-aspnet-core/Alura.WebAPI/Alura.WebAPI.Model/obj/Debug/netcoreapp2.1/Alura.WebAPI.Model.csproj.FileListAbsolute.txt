@@ -1,0 +1,9 @@
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Model\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.deps.json
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Model\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.dll
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Model\bin\Debug\netcoreapp2.1\Alura.WebAPI.Model.pdb
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.csprojAssemblyReference.cache
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.AssemblyInfoInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.AssemblyInfo.cs
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.csproj.CoreCompileInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.dll
+C:\jose-guilherme\kentech\treinamento-kentech\api-rest-aspnet-core\Alura.WebAPI\Alura.WebAPI.Model\obj\Debug\netcoreapp2.1\Alura.WebAPI.Model.pdb
