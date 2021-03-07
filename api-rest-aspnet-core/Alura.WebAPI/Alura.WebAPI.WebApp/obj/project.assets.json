@@ -12711,6 +12711,7 @@
       "Alura.WebAPI.Model >= 1.0.0",
       "Alura.WebAPI.Seguranca >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.1.0",
+      "Microsoft.AspNetCore.Mvc.Formatters.Xml >= 2.1.0",
       "Microsoft.NETCore.App >= 2.1.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.1.0"
     ]
@@ -12778,6 +12779,10 @@
             "target": "Package",
             "version": "[2.1.0, )"
           },
+          "Microsoft.AspNetCore.Mvc.Formatters.Xml": {
+            "target": "Package",
+            "version": "[2.1.0, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -12799,7 +12804,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

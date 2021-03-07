@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Fi1BfbOk4AAqZ6z67IsDVsS91jPlMuREG5jTpPasewt4KB1FCRgQWu1Ho0DqtJfNjpBy4ahY5TOt/1urtM7KjQ==",
+  "dgSpecHash": "WJWS96wl5UqRt2OKVVIm3jb7xWGGYHHcqKw9VwdoGgynvXe5khDgtt4qAriyCIMHSulXEeu1Mipg1QhepLgJSQ==",
   "success": true,
   "projectFilePath": "C:\\jose-guilherme\\kentech\\treinamento-kentech\\api-rest-aspnet-core\\Alura.WebAPI\\Alura.WebAPI.Seguranca\\Alura.WebAPI.Seguranca.csproj",
   "expectedPackageFiles": [
