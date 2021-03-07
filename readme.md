@@ -695,5 +695,10 @@ No caso dos cabeçalhos, o estado deles é guardado
   ### Execute Result
   - Etapa que ocorre depois da execução da **action**
   
+  ---
   
+  ## Roteamento padrão
+  
+  `.../Controller/Action/ID`
+    - 3º segmento é opcional
 <details/>
