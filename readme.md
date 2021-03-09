@@ -701,4 +701,21 @@ No caso dos cabeçalhos, o estado deles é guardado
   
   `.../Controller/Action/ID`
     - 3º segmento é opcional
+
+  ## Segurança com Cookies
+  
+  <div align="center">
+    <img src="https://user-images.githubusercontent.com/36301054/110509567-ff593c80-80e0-11eb-8949-9ee2878a91c7.png" alt=""Cookies>
+  </div>
+  
+  <br/>
+  
+  1. Login é realizado através do preenchimento de um formulário
+  2. Aplicação valida o login -> Gera um `Session ID` -> Coloca as informações do usuário numa base de dados em memória
+  3. Envia na resposta um HTTP 200 OK contendo o valor do `Session ID` no **cookie**
+  4. A partir disso, todas as próximas **requisições** que o cliente fizer terão esse `Session ID` dentro do cookie
+  	- Será sempre verificado se esse `Session ID` está na base de dados, dando a autorização ou não
+    - Essas próximas requisições ficam agrupadas, criando uma sensação de que existe um estado (aplicação conhece quem está fazendo todas as requisições seguintes)
+	    - Há acoplamento entre elas (**não é o ideal**)
+  
 <details/>
