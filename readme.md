@@ -736,8 +736,10 @@ No caso dos cabeçalhos, o estado deles é guardado
   - Token pode ser enviado no **corpo da requisição** ou **cabeçalho da requisição**
   - As requisições não possuem acoplamento com a aplicação
 
-  #### JWT
+  #### JWT (JSON Web Tokens)
   
+  - Um dos padrões usados nas configurações de token
+  - String criptografada usando base 64
   - [Site para mais informações](https://jwt.io/)
   
 <details/>
