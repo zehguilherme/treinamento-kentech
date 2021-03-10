@@ -723,8 +723,9 @@ No caso dos cabeçalhos, o estado deles é guardado
   ### Usando Token
 
   <div align="center">
-    <img src="https://user-images.githubusercontent.com/36301054/110643295-b792ed80-8192-11eb-9038-75df3e2eecb4.png" alt="Segurança comm token">
+    <img src="https://user-images.githubusercontent.com/36301054/110649349-46563900-8198-11eb-85c5-5d0c925f4e6d.png" alt="Segurança comm token">
   </div>
+
   
   <br/>
   
