@@ -723,18 +723,21 @@ No caso dos cabeçalhos, o estado deles é guardado
   ### Usando Token
 
   <div align="center">
-    <img src="https://user-images.githubusercontent.com/36301054/110649349-46563900-8198-11eb-85c5-5d0c925f4e6d.png" alt="Segurança comm token">
+    <img src="https://user-images.githubusercontent.com/36301054/110663275-09dd0a00-81a5-11eb-8fbb-ae70233c748a.png" alt="Segurança comm token">
   </div>
-
   
   <br/>
   
-- Não usa `Session ID`
-- Não usa `cookies`
-- Quando um cliente envia uma requisição para a aplicação, esta "embrulha" todas as informações necessárias para uma próxima requisição no `token` e envia na resposta para o cliente
-- Futuras requisições precisam enviar de volta esse `token`
-	- Não há nenhuma informação que necessite ser consultada pela aplicação (`Session ID` usado anteriormente). Ela apenas irá "desembrulhar" o `token` e verificar as informações (para dar permissão de acesso) que já estão ali dentro
-- Token pode ser enviado no **corpo da requisição** ou **cabeçalho da requisição**
-- As requisições não possuem acoplamento com a aplicação
+  - Não usa `Session ID`
+  - Não usa `cookies`
+  - Quando um cliente envia uma requisição para a aplicação, esta "embrulha" todas as informações necessárias para uma próxima requisição no `token` e envia na resposta para o cliente
+  - Futuras requisições precisam enviar de volta esse `token`
+    - Não há nenhuma informação que necessite ser consultada pela aplicação (`Session ID` usado anteriormente). Ela apenas irá "desembrulhar" o `token` e verificar as informações (para dar permissão de acesso) que já estão ali dentro
+  - Token pode ser enviado no **corpo da requisição** ou **cabeçalho da requisição**
+  - As requisições não possuem acoplamento com a aplicação
 
+  #### JWT
+  
+  - [Site para mais informações](https://jwt.io/)
+  
 <details/>
