@@ -702,10 +702,12 @@ No caso dos cabeçalhos, o estado deles é guardado
   `.../Controller/Action/ID`
     - 3º segmento é opcional
 
-  ## Segurança com Cookies
+  ## Segurança
+  
+  ### Usando Cookies
   
   <div align="center">
-    <img src="https://user-images.githubusercontent.com/36301054/110509567-ff593c80-80e0-11eb-8949-9ee2878a91c7.png" alt=""Cookies>
+    <img src="https://user-images.githubusercontent.com/36301054/110509567-ff593c80-80e0-11eb-8949-9ee2878a91c7.png" alt="Segurança com token">
   </div>
   
   <br/>
@@ -717,5 +719,20 @@ No caso dos cabeçalhos, o estado deles é guardado
   	- Será sempre verificado se esse `Session ID` está na base de dados, dando a autorização ou não
     - Essas próximas requisições ficam agrupadas, criando uma sensação de que existe um estado (aplicação conhece quem está fazendo todas as requisições seguintes)
 	    - Há acoplamento entre elas (**não é o ideal**)
+
+  ### Usando Token
+
+  <div align="center">
+    <img src="https://user-images.githubusercontent.com/36301054/110643295-b792ed80-8192-11eb-9038-75df3e2eecb4.png" alt="Segurança comm token">
+  </div>
   
+  <br/>
+  
+- Não usa `Session ID`
+- Não usa `cookies`
+- Quando um cliente envia uma requisição para a aplicação, esta "embrulha" todas as informações necessárias para uma próxima requisição no `token` e envia na resposta para o cliente
+- Futuras requisições precisam enviar de volta esse `token`
+	- Não há nenhuma informação que necessite ser consultada pela aplicação (`Session ID` usado anteriormente). Ela apenas irá "desembrulhar" o `token` e verificar as informações (para dar permissão de acesso) que já estão ali dentro
+- Token pode ser enviado no **corpo da requisição** ou **cabeçalho da requisição**
+
 <details/>
