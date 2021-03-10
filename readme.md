@@ -734,5 +734,6 @@ No caso dos cabeçalhos, o estado deles é guardado
 - Futuras requisições precisam enviar de volta esse `token`
 	- Não há nenhuma informação que necessite ser consultada pela aplicação (`Session ID` usado anteriormente). Ela apenas irá "desembrulhar" o `token` e verificar as informações (para dar permissão de acesso) que já estão ali dentro
 - Token pode ser enviado no **corpo da requisição** ou **cabeçalho da requisição**
+- As requisições não possuem acoplamento com a aplicação
 
 <details/>
