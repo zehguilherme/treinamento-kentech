@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iiL8AHpFQGcQbJIGZEzQWGQxs24RnZivTXiYTt26K22XL2eRzIYgF6rcHqRP6eMOD8ZXQYVJauNeVf6FQ8sPrg==",
+  "dgSpecHash": "6soJgco3fTM2QyxXRHaESbmfOCgeiOGCKXwIqBz8yl3Cgn1T5iYzuLQXiKX79L0nuOQjywmxtnWbyNjw5Lz+8A==",
   "success": true,
   "projectFilePath": "C:\\jose-guilherme\\kentech\\treinamento-kentech\\api-rest-aspnet-core\\Alura.WebAPI\\Alura.WebAPI.Model\\Alura.WebAPI.Model.csproj",
   "expectedPackageFiles": [
