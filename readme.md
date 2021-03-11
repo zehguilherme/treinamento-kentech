@@ -741,5 +741,11 @@ No caso dos cabeçalhos, o estado deles é guardado
   - Um dos padrões usados nas configurações de token
   - String criptografada usando base 64
   - [Site para mais informações](https://jwt.io/)
+
+  <br/>
+
+  <div align="center">
+    <img src="https://user-images.githubusercontent.com/36301054/110821712-1af24d80-826f-11eb-86fd-1462c4444943.png" alt="Resumo do curso de ASP.NET Core">
+  </div>
   
 <details/>
