@@ -28,8 +28,6 @@
     ".NETCoreApp,Version=v2.1": {
       "Alura.WebAPI.WebApp/1.0.0": {
         "dependencies": {
-          "Alura.WebAPI.DAL.Livros": "1.0.0",
-          "Alura.WebAPI.DAL.Usuarios": "1.0.0",
           "Alura.WebAPI.Model": "1.0.0",
           "Alura.WebAPI.Seguranca": "1.0.0",
           "Microsoft.AspNetCore.App": "2.1.26",
@@ -418,32 +416,6 @@
         },
         "compile": {
           "lib/netstandard2.0/System.Text.Encodings.Web.dll": {}
-        }
-      },
-      "Alura.WebAPI.DAL.Livros/1.0.0": {
-        "dependencies": {
-          "Alura.WebAPI.Model": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "2.1.14",
-          "Microsoft.EntityFrameworkCore.Relational": "2.1.14"
-        },
-        "runtime": {
-          "Alura.WebAPI.DAL.Livros.dll": {}
-        },
-        "compile": {
-          "Alura.WebAPI.DAL.Livros.dll": {}
-        }
-      },
-      "Alura.WebAPI.DAL.Usuarios/1.0.0": {
-        "dependencies": {
-          "Microsoft.AspNetCore.Identity": "2.1.6",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "2.1.6",
-          "Microsoft.EntityFrameworkCore.Relational": "2.1.14"
-        },
-        "runtime": {
-          "Alura.WebAPI.DAL.Usuarios.dll": {}
-        },
-        "compile": {
-          "Alura.WebAPI.DAL.Usuarios.dll": {}
         }
       },
       "Alura.WebAPI.Model/1.0.0": {
@@ -3624,16 +3596,6 @@
       "sha512": "sha512-KmJ+CJXizDofbq6mpqDoRRLcxgOd2z9X3XoFNULSbvbqVRZkFX3istvr+MUjL6Zw1RT+RNdoI4GYidIINtgvqQ==",
       "path": "system.text.encodings.web/5.0.1",
       "hashPath": "system.text.encodings.web.5.0.1.nupkg.sha512"
-    },
-    "Alura.WebAPI.DAL.Livros/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
-    },
-    "Alura.WebAPI.DAL.Usuarios/1.0.0": {
-      "type": "project",
-      "serviceable": false,
-      "sha512": ""
     },
     "Alura.WebAPI.Model/1.0.0": {
       "type": "project",
