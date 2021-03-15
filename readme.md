@@ -748,4 +748,18 @@ No caso dos cabeçalhos, o estado deles é guardado
     <img src="https://user-images.githubusercontent.com/36301054/110821712-1af24d80-826f-11eb-86fd-1462c4444943.png" alt="Resumo do curso de ASP.NET Core">
   </div>
   
+  ## Versionamento de uma API
+  
+  ### Funcionalidades
+  
+  <div align="center">
+    <img src="https://user-images.githubusercontent.com/36301054/111191261-a41ec280-8596-11eb-9dd9-d1cd09467e26.png" alt="Resumo do curso de ASP.NET Core - parte 2">
+  </div>
+  
+  <br/>
+  
+  <div align="center">
+    <img src="https://user-images.githubusercontent.com/36301054/111213582-a8a3a500-85af-11eb-89fd-834859752495.png" alt="Aprendizado do curso parte 3">
+  </div>
+  
 <details/>
