@@ -8,13 +8,13 @@ namespace Alura.ListaLeitura.Api.Controllers
 {
   [ApiController]
   [Authorize]
-  [ApiVersion("1.0")]
-  [Route("api/v{version:apiVersion}/[controller]")]
-  public class LivrosController : ControllerBase
+  [ApiVersion("2.0")]
+  [Route("api/v{version:apiVersion}/livros")]
+  public class Livros2Controller : ControllerBase
   {
     private readonly IRepository<Livro> _repo;
 
-    public LivrosController(IRepository<Livro> repository)
+    public Livros2Controller(IRepository<Livro> repository)
     {
       _repo = repository;
     }
@@ -36,7 +36,7 @@ namespace Alura.ListaLeitura.Api.Controllers
       {
         return NotFound();
       }
-      return Ok(model.ToApi());
+      return Ok(model);
     }
 
     [HttpGet("{id}/capa")]
