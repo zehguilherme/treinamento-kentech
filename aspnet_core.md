@@ -92,10 +92,14 @@
     <img src="https://user-images.githubusercontent.com/36301054/111213582-a8a3a500-85af-11eb-89fd-834859752495.png" alt="Aprendizado do curso parte 3">
   </div>
   
----
-
 ## Lidando com coleções grandes
 
 <div align="center">
-    <img src="https://user-images.githubusercontent.com/36301054/111315015-bbb28580-8640-11eb-84fd-d5eb8d09afce.png" alt="Lidando com coleções grandes">
+  <img src="https://user-images.githubusercontent.com/36301054/111315015-bbb28580-8640-11eb-84fd-d5eb8d09afce.png" alt="Lidando com coleções grandes">
+</div>
+
+## Paginando coleções grandes
+
+<div>
+  <img src="https://user-images.githubusercontent.com/36301054/111349848-422a8f80-8660-11eb-91e1-b87d79193781.png" alt="Paginando coleções grandes">
 </div>
