@@ -1,7 +1,9 @@
 using Alura.ListaLeitura.Modelos;
 using Alura.ListaLeitura.Persistencia;
+using Alura.WebAPI.Api.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Swashbuckle.AspNetCore.Annotations;
 using System.Linq;
 
 namespace Alura.ListaLeitura.Api.Controllers
@@ -9,6 +11,7 @@ namespace Alura.ListaLeitura.Api.Controllers
   [ApiController]
   [Authorize]
   [ApiVersion("2.0")]
+  [ApiExplorerSettings(GroupName = "v2")]
   [Route("api/v{version:apiVersion}/livros")]
   public class Livros2Controller : ControllerBase
   {
@@ -20,15 +23,40 @@ namespace Alura.ListaLeitura.Api.Controllers
     }
 
     [HttpGet]
-    public IActionResult ListaDeLivros()
+    [SwaggerOperation(
+      Summary = "Recupera uma coleção paginada de livros.",
+      Tags = new[] { "Livros" },
+      Produces = new[] { "Livros" }
+    )]
+    [ProducesResponseType(statusCode: 200, Type = typeof(LivroPaginado))]
+    [ProducesResponseType(statusCode: 500, Type = typeof(ErrorResponse))]
+    [ProducesResponseType(statusCode: 404)]
+    public IActionResult ListaDeLivros(
+      [FromQuery] LivroFiltro filtro,
+      [FromQuery] LivroOrdem ordem,
+      [FromQuery] LivroPaginacao paginacao)
     {
-      var lista = _repo.All.Select(l => l.ToApi()).ToList();
+      var livroPaginado = _repo.All
+        .AplicaFiltro(filtro)
+        //.AplicaOrdem(ordem)
+        .Select(l => l.ToApi())
+        .ToLivroPaginado(paginacao);
 
-      return Ok(lista);
+      return Ok(livroPaginado);
     }
 
     [HttpGet("{id}")]
-    public IActionResult Recuperar(int id)
+    [SwaggerOperation(
+      Summary = "Recupera o livro identificado por seu {id}.",
+      Tags = new[] { "Livros" },
+      Produces = new[] { "application/json", "application/xml" } //Quais os media-types que operação irá produzir
+    )]
+    [ProducesResponseType(statusCode: 200, Type = typeof(Livro))]
+    [ProducesResponseType(statusCode: 500, Type = typeof(ErrorResponse))]
+    [ProducesResponseType(statusCode: 404)]
+    public IActionResult Recuperar(
+      [SwaggerParameter("Id do livro.", Required = true)] int id
+    )
     {
       var model = _repo.Find(id);
 
@@ -40,20 +68,34 @@ namespace Alura.ListaLeitura.Api.Controllers
     }
 
     [HttpGet("{id}/capa")]
+    [SwaggerOperation(
+      Summary = "Recupera a capa do livro identificado por seu {id}.",
+      Tags = new[] { "Livros" },
+      Produces = new[] { "image/png" }
+    )]
     public IActionResult ImagemCapa(int id)
     {
       byte[] img = _repo.All
           .Where(l => l.Id == id)
           .Select(l => l.ImagemCapa)
           .FirstOrDefault();
+
       if (img != null)
       {
         return File(img, "image/png");
       }
+
       return File("~/images/capas/capa-vazia.png", "image/png");
     }
 
     [HttpPost]
+    [SwaggerOperation(
+      Summary = "Registra novo livro na base.",
+      Tags = new[] { "Livros" }
+    )]
+    [ProducesResponseType(statusCode: 201, Type = typeof(LivroApi))]
+    [ProducesResponseType(statusCode: 400, Type = typeof(ErrorResponse))]
+    [ProducesResponseType(statusCode: 500, Type = typeof(ErrorResponse))]
     public IActionResult Incluir([FromForm] LivroUpload model)
     {
       if (ModelState.IsValid)
@@ -67,10 +109,18 @@ namespace Alura.ListaLeitura.Api.Controllers
 
         return Created(uri, livro); //Código HTTP 201
       }
-      return BadRequest(); //Código HTTP 400
+      //Código HTTP 400
+      return BadRequest(ErrorResponse.FromModelState(ModelState));
     }
 
     [HttpPut]
+    [SwaggerOperation(
+      Summary = "Altera uma ou mais informações de um livro.",
+      Tags = new[] { "Livros" }
+    )]
+    [ProducesResponseType(statusCode: 200)]
+    [ProducesResponseType(400, Type = typeof(ErrorResponse))]
+    [ProducesResponseType(500, Type = typeof(ErrorResponse))]
     public IActionResult Alterar([FromForm] LivroUpload model)
     {
       if (ModelState.IsValid)
@@ -90,6 +140,13 @@ namespace Alura.ListaLeitura.Api.Controllers
     }
 
     [HttpDelete("{id}")]
+    [SwaggerOperation(
+      Summary = "Remove o livro identificado pelo seu {id}.",
+      Tags = new[] { "Livros" }
+    )]
+    [ProducesResponseType(404)]
+    [ProducesResponseType(204)]
+    [ProducesResponseType(500, Type = typeof(ErrorResponse))]
     public IActionResult Remover(int id)
     {
       var model = _repo.Find(id);

@@ -1,14 +1,18 @@
 # HTML - CSS
 
 ## Nível de "força"
-- inline > id > class > tag (1000 > 100 > 10 > 1)
-  - **Exemplo:**
-    - `p` 1
-    - `form p` 1 + 1 = 2 -> maior força, especificidade
 
----
+- `inline > id > class > tag` (1000 > 100 > 10 > 1)
+
+Exemplo:
+
+- `p` 1
+- `form p` 1 + 1 = 2 -> maior força, especificidade
+
+## Unidades
 
 ### `em`
+
 - Unidade de medida dinâmica
 - Se baseia em um tamanho de fonte-base
 
@@ -28,7 +32,7 @@ div {
 }
 ```
 
-Segundo este exemplo, o texto dentro de `div` terá tamanho de `2em`. O que define qual o valor de 2, nesse caso, é o valor inicial de `font-size` declarado em `body`, ou seja, `14px`. Então no exemplo acima `div` terá um valor de `font-size` de `28px` (14px x 2em). Basicamente, o que estamos dizendo para o CSS é que cada `em` tem um valor inicial de 14px
+Segundo este exemplo, o texto dentro de `div` terá tamanho de `2em`. O que define qual o valor de 2, nesse caso, é o valor inicial de `font-size` declarado em `body`, ou seja, `14px`. Então no exemplo acima `div` terá um valor de `font-size` de `28px` (`14px x 2em`). Basicamente, o que estamos dizendo para o CSS é que cada `em` tem um valor inicial de `14px`
 
 ```html
 <body>
@@ -46,7 +50,7 @@ Quando declaramos a unidade de medida como `em`, cada elemento herda o tamanho d
 
 ### `rem`
 
-- *root em*
+- `root em`
 
 Podemos especificar um font-size no elemento mais externo do nosso HTML (normalmente na tag `<html>`) e todos os elementos seguirão somente esse valor
 
@@ -72,7 +76,7 @@ div {
 </body>
 ```
 
-Quando utilizamos em ou rem sem declarar um tamanho de fonte, o CSS utiliza por padrão a medida de 16px = 1em e 16px = 1rem. Como você já deve ter imaginado, podemos personalizar essa medida inicial de acordo com nosso projeto
+Quando utilizamos em ou rem sem declarar um tamanho de fonte, o CSS utiliza por padrão a medida de `16px = 1em e 16px = 1rem`. Como você já deve ter imaginado, podemos personalizar essa medida inicial de acordo com nosso projeto
 
 ```css
 html {

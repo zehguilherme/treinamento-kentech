@@ -1,6 +1,6 @@
 # HTTP
 
-**Hypertext Tranfer Protocol**
+Hypertext Transfer Protocol
 
 - Carrega apenas texto puro
 - É independente de plataforma de desenvolvimento
@@ -8,7 +8,7 @@
 
 ## HTTPS
 
-- HTTP + SSL/TSL (**Hypertext Transfer Protocol + Secure Sockets Layer/Transport Layer Security**)
+- HTTP + SSL/TSL (Hypertext Transfer Protocol + Secure Sockets Layer/Transport Layer Security)
 
 - Carrega dados criptografados
 - Usa ambos os métodos de criptografia, **assimétrica** e **simétrica**
@@ -22,13 +22,10 @@
 - Estão *ligadas* matematicamente
 - O que foi cifrado pela chave pública só pode ser decifrado pela chave privada
 
-- **Pública**
-  - Cliente
-  - Utilizada para criptografar os dados
-
-- **Privada**
-  - Servidor
-  - Usada para descriptografar os dados que foram criptografados com a chave pública
+| Pública                              | Privada                                                                          |
+| ------------------------------------ | -------------------------------------------------------------------------------- |
+| Cliente                              | Servidor                                                                         |
+| Utilizada para criptografar os dados | Usada para descriptografar os dados que foram criptografados com a chave pública |
 
 - Criptografia
 - **Assimétrica**

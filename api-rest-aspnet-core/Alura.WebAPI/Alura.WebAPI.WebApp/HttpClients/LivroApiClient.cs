@@ -78,7 +78,7 @@ namespace Alura.ListaLeitura.HttpClients
 
     private HttpContent CreateMultipartFormDataContent(LivroUpload model)
     {
-      var content = new MultipartFormDataContent();
+      MultipartFormDataContent content = new MultipartFormDataContent();
 
       content.Add(new StringContent(model.Titulo), EnvolveComAspasDuplas("titulo"));
       content.Add(new StringContent(model.Lista.ParaString()), EnvolveComAspasDuplas("lista"));

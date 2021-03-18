@@ -1,34 +1,22 @@
 # ASP NET Core
 
-## MVC (Model View Controller)
+## MVC
 
-### Model
-- Classes de negócio
-- Elas modelam a aplicação
-
-### View
-- Classes e arquivos para tratar da parte que o usuário visualiza
-
-### Controller
-- A lógica de controle/atendimento das requisições
-
----
+| Model                                      | View                                                            | Controller                                       |
+| ------------------------------------------ | --------------------------------------------------------------- | ------------------------------------------------ |
+| Classes de negócio que modelam a aplicação | Classes e arquivos para tratar da parte que o usuário visualiza | A lógica de controle/atendimento das requisições |
 
 ## Estágios de execução do framework
 
-- O Framework é que trata as respostas das requisições
+O Framework é que trata as respostas das requisições
 
 ### Execute Result
-- Etapa que ocorre depois da execução da **action**
 
----
+Etapa que ocorre depois da execução da **action**
 
 ## Roteamento padrão
 
-`.../Controller/Action/ID`
-  - 3º segmento é opcional
-
----
+`.../Controller/Action/ID` -> 3º segmento é opcional
 
 ## Segurança
 
@@ -76,22 +64,20 @@
   <img src="https://user-images.githubusercontent.com/36301054/110821712-1af24d80-826f-11eb-86fd-1462c4444943.png" alt="Resumo do curso de ASP.NET Core">
 </div>
 
----
-
 ## Versionamento de uma API
 
-  ### Funcionalidades
+### Funcionalidades
 
-  <div align="center">
-    <img src="https://user-images.githubusercontent.com/36301054/111191261-a41ec280-8596-11eb-9dd9-d1cd09467e26.png" alt="Resumo do curso de ASP.NET Core - parte 2">
-  </div>
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/36301054/111191261-a41ec280-8596-11eb-9dd9-d1cd09467e26.png" alt="Resumo do curso de ASP.NET Core - parte 2">
+</div>
 
-  <br/>
+<br/>
 
-  <div align="center">
-    <img src="https://user-images.githubusercontent.com/36301054/111213582-a8a3a500-85af-11eb-89fd-834859752495.png" alt="Aprendizado do curso parte 3">
-  </div>
-  
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/36301054/111213582-a8a3a500-85af-11eb-89fd-834859752495.png" alt="Aprendizado do curso parte 3">
+</div>
+
 ## Lidando com coleções grandes
 
 <div align="center">
