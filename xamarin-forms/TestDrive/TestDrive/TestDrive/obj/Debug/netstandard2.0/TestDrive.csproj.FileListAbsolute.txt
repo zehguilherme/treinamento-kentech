@@ -1,0 +1,16 @@
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\bin\Debug\netstandard2.0\TestDrive.deps.json
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\bin\Debug\netstandard2.0\TestDrive.dll
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\bin\Debug\netstandard2.0\ref\TestDrive.dll
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\bin\Debug\netstandard2.0\TestDrive.pdb
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\TestDrive.csprojAssemblyReference.cache
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\TestDrive.AssemblyInfoInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\TestDrive.AssemblyInfo.cs
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\TestDrive.csproj.CoreCompileInputs.cache
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\XamlC.stamp
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\TestDrive.dll
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\ref\TestDrive.dll
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\TestDrive.pdb
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\Views\ListagemView.xaml.g.cs
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\Views\DetalheView.xaml.g.cs
+C:\jose-guilherme\kentech\treinamento-kentech\xamarin-forms\TestDrive\TestDrive\TestDrive\obj\Debug\netstandard2.0\Views\AgendamentoView.xaml.g.cs
