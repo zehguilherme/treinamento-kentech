@@ -1,5 +1,13 @@
 # HTML
 
+## DOM
+
+<div align="center">
+
+![Árvore DOM](js-manipular-dom/.github/img/dom.png)
+
+</div>
+
 ### `<fieldset>`
 
 - Configuração de um ou mais campos referentes a um assunto específico em um formulário
@@ -33,6 +41,9 @@
 ### `data-`
 
 - Possibilita adicionar informações customizadas/dinâmicas no DOM, sem utilizar classes nem IDs
+- É usado para separar responsabilidades entre JavaScript e CSS
+
+[Vídeo com exemplo](https://youtu.be/ri-xkk9PuDU)
 
 ## Modal
 

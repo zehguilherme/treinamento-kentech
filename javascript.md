@@ -1,5 +1,11 @@
 # JavaScript
 
+## IIFE
+
+Immediately Invoked Function Expression
+
+[Developer Mozilla](https://developer.mozilla.org/pt-BR/docs/Glossary/IIFE)
+
 ### `querySelector`
 
 - Realiza a busca na DOM através de seletores CSS
