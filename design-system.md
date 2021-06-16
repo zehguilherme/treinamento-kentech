@@ -101,7 +101,7 @@ O Google Fonts oferece uma grande diversidade de fontes para serem utilizadas e 
 
 Por outro lado, deve-se verificar como é a atuação dessas fontes nesses ambientes diversos. Para cada um desses ambientes há uma fonte padrão. Isso significa que cada sistema operacional indica qual a melhor fonte feita para ele. Por exemplo: o Android utiliza a fonte Roboto, o iOS usa a SF UI, o Windows usa a Segoe
 
-![Typefaces](https://caelum-online-public.s3.amazonaws.com/1813-design-system/02/alura_designsystemfigma_02.gif)
+![Typefaces](design-system/alura_designsystemfigma_02.gif)
 
 *Design system do Firefox indica qual fonte usar em cada sistema operacional.*
 
